@@ -19,10 +19,11 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" String(- 2); //kept the remainder of the result function as a string
+let result = String("5" - 2); //kept the result function as a string
+console.log(result);
 console.log("The result is: " + result);
 
-let isValid = Boolean(false); //This is string "false" changed into a boolean value
+let isValid = Boolean("false"); //This is string "false" changed into a boolean value
 if (isValid) {
     console.log("This is valid!");
 }
@@ -30,3 +31,16 @@ if (isValid) {
 let age = "25";
 let totalAge = Number(age) + 5; //Turns the initial string 25 into the number 25 making it explicit coversion
 console.log("Total Age: " + totalAge);
+
+// My Examples
+
+//Implicit Type Conversion
+
+let sum = "90" - 10
+console.log("The sum is:" + sum)
+
+//Explicit Type Conversion
+
+let songLyric = 7779311
+let jam = String(songLyric)
+console.log("Prince wrote an ice cold song called " + jam)
