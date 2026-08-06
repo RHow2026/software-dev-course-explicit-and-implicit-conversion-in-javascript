@@ -19,14 +19,14 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" - 2;
+let result = "5" String(- 2); //kept the remainder of the result function as a string
 console.log("The result is: " + result);
 
-let isValid = Boolean("false");
+let isValid = Boolean(false); //This is string "false" changed into a boolean value
 if (isValid) {
     console.log("This is valid!");
 }
 
 let age = "25";
-let totalAge = age + 5;
+let totalAge = Number(age) + 5; //Turns the initial string 25 into the number 25 making it explicit coversion
 console.log("Total Age: " + totalAge);
