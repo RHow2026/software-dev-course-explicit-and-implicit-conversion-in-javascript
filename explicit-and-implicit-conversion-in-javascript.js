@@ -19,7 +19,7 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = String("5" - 2); //kept the result function as a string
+let result = String("5" - 2); //correct implicit conversion of string to number
 console.log(result);
 console.log("The result is: " + result);
 
