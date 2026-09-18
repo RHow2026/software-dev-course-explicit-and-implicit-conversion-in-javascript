@@ -36,11 +36,18 @@ console.log("Total Age: " + totalAge);
 
 //Implicit Type Conversion
 
-let sum = "90" - 10
-console.log("The sum is:" + sum)
+let remainder = "90" - 10//JavaScript automatically converts "90" string into a number before performing subtraction.
+console.log("The sum is: " + remainder)
 
 //Explicit Type Conversion
 
+let userResponse;
+console.log(typeof userResponse);//userResponse is undefined
+let change2Boolean = Boolean(userResponse);//userResponse converted to Boolean
+console.log(typeof change2Boolean); //type of function for clear before and after data type conversion
+
 let songLyric = 7779311
-let jam = String(songLyric)
+console.log(typeof songLyric); // songLyric is a number
+let jam = String(songLyric) // jam variable changes it to a string
 console.log("Prince wrote an ice cold song called " + jam)
+console.log(typeof jam); // type of function for clear before and after data type conversion.
